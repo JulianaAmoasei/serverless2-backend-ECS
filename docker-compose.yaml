@@ -2,14 +2,14 @@ version: '3.4'
 
 services:
   client:
-    build: ./app
+    build: ./cadastro-ui
     ports: 
       - 80:80
     container_name: projeto-teste-deploy-front
     depends_on:
       - server
   server:
-    build: ./server
+    build: ./servidor
     ports:
       - 3000:3000
     container_name: projeto-teste-deploy-back

@@ -5,4 +5,4 @@ COPY ./package.json .
 RUN npm install
 COPY ./servidor ./servidor
 EXPOSE 3000
-CMD cd /server && npm run dev
+CMD cd /server && npm start
