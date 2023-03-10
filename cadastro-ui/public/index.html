@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+  <main id="main">
+    <form id="form-single" class="form">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" placeholder="Insira o nome" id="input-nome">
+      <label for="matricula">Matrícula</label>
+      <input type="text" name="matricula" placeholder="Insira o código da matrícula" id="input-matricula">
+      <input type="submit" name="envio-form-single" value="Enviar dados" id="btn-submit-form-single">
+    </form>
+    <form id="form-batch" class="form">
+      <input type="file" name="matricula-batch" id="input-matricula-batch">
+      <input type="submit" name="envio-form-batch" value="Enviar dados em lote" id="btn-submit-form-batch">
+    </form>
+  </main>
+
+  <script src="../src/script.js"></script>
+</body>
+
+</html>
