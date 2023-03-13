@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/cdk-ecs-infra.ts",
+  "app": "npm install && npx ts-node --prefer-ts-exts bin/cdk-ecs-infra.ts",
   "watch": {
     "include": [
       "**"
