@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import db from "./config/dbConnect.js";
 import manipulador404 from "./middlewares/manipulador404.js";
 import manipuladorDeErros from "./middlewares/manipuladorDeErros.js";
@@ -10,6 +11,7 @@ db.once("open", () => {
 });
 
 const app = express();
+app.use(cors())
 app.use(express.json());
 routes(app);
 
