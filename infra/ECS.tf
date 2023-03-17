@@ -57,6 +57,7 @@ resource "aws_ecs_service" "Django-API" {
   name            = "Django-API"
   cluster         = module.ecs.cluster_id
   task_definition = aws_ecs_task_definition.Django-API.arn
+  force_new_deployment = true
   desired_count   = 3
 
   load_balancer {
